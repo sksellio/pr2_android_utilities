@@ -1,0 +1,10 @@
+<stack>
+  <description brief="pr2_android_utilities">
+    This is the stack of android applications for pr2
+  </description>
+  <author>KazutoMurase</author>
+  <license>Apache 2.0</license>
+  <review status="unreviewed" notes="" />
+  <url>http://ros.org/wiki/pr2_android_utilities</url>
+</stack>
+

@@ -1,0 +1,9 @@
+<package>
+  <description brief="pr2_core_components">
+  </description>
+  <author>KazutoMurase</author>
+  <license>Apache 2.0</license>
+  <review status="unreviewed" notes="" />
+  <url>http://ros.org/wiki/pr2_android_utilities</url>
+</package>
+
