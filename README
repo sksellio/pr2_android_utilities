@@ -1,0 +1,10 @@
+pr2_android_utilities
+=====================
+
+Android app development for the pr2.
+
+
+To build:
+
+make
+./gradlew debug
