@@ -71,7 +71,11 @@ public class Pr2Dashboard extends LinearLayout implements DashboardInterface {
 		modeButton.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				onModeButtonClicked();
+				new Thread(new Runnable() {
+					public void run() {
+						onModeButtonClicked();
+					}
+				}).start();
 			}
 		});
 		modeWaitingSpinner = (ProgressBar) findViewById(R.id.pr2_mode_waiting_spinner);
@@ -158,7 +162,7 @@ public class Pr2Dashboard extends LinearLayout implements DashboardInterface {
 				&& msg.getPowerStateValid() == true) {
 			for (int i = 0; i < msg.getPowerBoardState().getCircuitState()
 					.readableBytes(); i++) {
-				if (msg.getPowerBoardState().getCircuitState().getInt(i) != 3) { // Breaker
+				if (msg.getPowerBoardState().getCircuitState().getByte(i) != 3) { // Breaker
 					breaker_state = false;
 				}
 			}
@@ -189,7 +193,11 @@ public class Pr2Dashboard extends LinearLayout implements DashboardInterface {
 			}
 			if (clickOnTransition) {
 				clickOnTransition = false;
-				onModeButtonClicked();
+				new Thread(new Runnable() {
+					public void run() {
+						onModeButtonClicked();
+					}
+				}).start();
 			}
 		}
 	}
