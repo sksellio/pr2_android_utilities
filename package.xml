@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+  <name>pr2_android_utilities</name>
+  <version>0.0.0</version>
+  <description>
+    This is the stack of android applications for pr2
+  </description>
+  <url>http://ros.org/wiki/pr2_android_utilities</url>
+  <maintainer email="kattyokaccho3616@gmail.com">Kazuto Murase</maintainer>
+  <license>Apache 2.0</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rosjava_tools</build_depend>
+  <build_depend>android_osrf</build_depend>
+
+  <run_depend>rosjava_tools</run_depend>
+  <run_depend>android_osrf</run_depend>
+
+</package>
+
