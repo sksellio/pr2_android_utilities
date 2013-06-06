@@ -1,6 +1,6 @@
 package com.ros.pr2.apps.core_components;
 
-import org.ros.android.robotapp.Dashboard.DashboardInterface;
+import org.ros.android.apps.core_components.Dashboard.DashboardInterface;
 import org.ros.android.view.BatteryLevelView;
 import org.ros.exception.RemoteException;
 import org.ros.exception.ServiceNotFoundException;

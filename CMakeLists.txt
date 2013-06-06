@@ -3,7 +3,7 @@ project(pr2_android_utilities)
 
 find_package(catkin REQUIRED rosjava_tools)
 
-catkin_rosjava_setup(debug)
+catkin_android_setup()
 
 catkin_package()
 
